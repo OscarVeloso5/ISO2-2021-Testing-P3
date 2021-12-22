@@ -90,9 +90,9 @@ public class Certificado{
 		
 		if (certificadoFinal >= 3) {
 			
-			msgCertificado= "El software se ha certificado con una calidad de "+certificadoFinal;
+			msgCertificado= "El software se ha certificado con calidad";
 		}else {
-			msgCertificado = "No se ha podido certificar el software" +certificadoFinal;
+			msgCertificado = "No se ha podido certificar el software";
 		}
 	
 		return msgCertificado;
