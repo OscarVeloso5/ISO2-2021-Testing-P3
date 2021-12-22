@@ -12,9 +12,9 @@ public class mantenibilidad {
 	
 	int rango;
 	
-	public mantenibilidad(int mantenibilidad, int modularidad, int reusabilidad,int analizabilidad, int capacidadMod,
+	public mantenibilidad(int modularidad, int reusabilidad,int analizabilidad, int capacidadMod,
 			int capacidadPro, int calidadFinal, int rango) {
-		this.mantenibilidad = mantenibilidad;
+		
 		this.modularidad = modularidad;
 		this.reusabilidad = reusabilidad;
 		this.analizabilidad = analizabilidad;
@@ -22,10 +22,8 @@ public class mantenibilidad {
 		this.capacidadPro = capacidadPro;
 		this.rango = rango;
 	}
-	public int getMantenibilidad() {
-		return mantenibilidad;
-	} 
-public int medicionModularidad() {
+
+public int medicionModularidad(int rango) {
 		
 		if(rango>=0 && rango<10) {
 			modularidad= 0;
@@ -49,7 +47,7 @@ public int medicionModularidad() {
 		return modularidad;
 	}
 
-public int medicionReusabilidad() {
+public int medicionReusabilidad(int rango) {
 	
 	if(rango>=0 && rango<10) {
 		reusabilidad= 0;
@@ -72,7 +70,7 @@ public int medicionReusabilidad() {
 	
 	return reusabilidad;
 }
-public int medicionAnalizabilidad() {
+public int medicionAnalizabilidad(int rango) {
 	
 	if(rango>=0 && rango<10) {
 		analizabilidad= 0;
@@ -95,7 +93,7 @@ public int medicionAnalizabilidad() {
 	
 	return analizabilidad;
 }
-public int medicionCapadidadMod() {
+public int medicionCapadidadMod(int rango) {
 	
 	if(rango>=0 && rango<10) {
 		capacidadMod= 0;
@@ -118,7 +116,7 @@ public int medicionCapadidadMod() {
 	
 	return capacidadMod;
 }
-public int medicionCapadidadPro() {
+public int medicionCapadidadPro(int rango) {
 	
 	if(rango>=0 && rango<10) {
 		capacidadPro= 0;
@@ -144,7 +142,7 @@ public int medicionCapadidadPro() {
 
 
 public int Mantenibilidad(int modularidad, int reusabilidad, int analizabilidad, int capacidadMod, int capacidadPro) {
-	int min= 0;
+	int min= 10;
 	int num= 0;
 	int[] mediciones = (new int[] {modularidad, reusabilidad, analizabilidad, capacidadMod, capacidadPro});
 	
